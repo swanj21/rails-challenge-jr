@@ -16,5 +16,6 @@ module MySelfDestruct
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.web_console.whitelisted_ips = '136.62.252.244'
+    config.web_console.development_only = false
   end
 end
