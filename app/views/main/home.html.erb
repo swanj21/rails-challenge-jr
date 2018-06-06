@@ -1,0 +1,37 @@
+<div class="center">
+  <h1>Self Destructing Message</h1>
+  <form action="/main/save" id="new_message" method="post">
+  	<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+	  <table>
+	    <tr>
+		  <td>
+	        <label for="userMessage">Enter your message:</label>
+		  </td>
+		  <td>
+		    <input id="userMessage" name="message[body]" type="text" placeholder="Enter message...">
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		    <br><label for="email">Enter email:</label>
+	    </td>
+		  <td>
+		    <br><input id="email" name="message[email]" type="email" placeholder="example@email.com">
+		  </td>
+		</tr>
+		<tr>
+	    <td>
+	        <br><label for="password">Add a password:</label> 
+		  </td>
+		  <td>
+		    <br><input id="password" name="message[password]" type="password" placeholder="Optional">
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		    <br><input class="btn btn-primary" name="commit" type="submit" value="Create message" />
+	    </td>
+		</tr>
+	  </table>
+  </form>
+</div>

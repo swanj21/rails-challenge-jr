@@ -1,0 +1,13 @@
+<head>
+    <title>View message</title>
+</head>
+<h1 class="center">Secret Message</h1>
+<div class="jumbotron">
+  <p>
+    <% if !@message.nil? %>
+      <%= @message[:body] %>
+    <% else %>
+      Message does not exist
+    <% end %>
+  </p>
+</div>
